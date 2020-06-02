@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/fans_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/information_background"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的关注"
+            android:gravity="center_horizontal"
+            android:textColor="#FA93B1"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/newUP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:hint="搜索新的UP主"
+        android:textColorHint="#aaa"
+        android:textColor="#aaa"
+        android:textSize="16dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/attention_search_title"
+        android:drawableLeft="@mipmap/search"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/information_background"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认分组"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/number"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#aaa" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/attentionList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/information_background" />
+
+</LinearLayout>

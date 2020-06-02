@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jianbian_biaoti"
+    android:paddingBottom="7dp"
+    android:paddingTop="35dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="20dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <!--状态栏和导航栏背景相同android:clipToPadding="true"-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/head_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/search_text"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="搜索"
+            android:textSize="13dp"
+            android:textColorHint="#ffffff"
+            android:drawableLeft="@mipmap/search"
+            android:background="@drawable/search_shape"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@mipmap/game"
+            android:layout_marginRight="15dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@mipmap/email" />
+
+</LinearLayout>

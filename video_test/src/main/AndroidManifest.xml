@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.video_test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/bilibili"
+        android:label="哔哩哔哩"
+        android:roundIcon="@mipmap/bilibili"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NewUpActivity"></activity>
+        <activity android:name=".MyActivity">
+
+        </activity>
+        <activity android:name=".HomePageActivity"></activity>
+        <activity android:name=".FansActivity" />
+        <activity android:name=".AttentionActivity"></activity>
+        <activity android:name=".PersonSignatureActivity" />
+        <activity android:name=".NickNameActivity" />
+        <activity android:name=".AccountInformationActivity" />
+        <activity android:name=".ReleaseDynamicActivity">
+
+        </activity>
+        <activity android:name=".SearchResultActivity" />
+        <activity android:name=".SearchActivity">
+
+        </activity>
+        <activity android:name=".DynamicActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".RegisteredActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBarWithBackground">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IndexActivity" >
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|layoutDirection|screenSize"></activity>
+    </application>
+
+</manifest>

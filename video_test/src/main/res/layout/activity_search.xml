@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llt_root"
+    android:background="#fff"
+    android:windowSoftInputMode="adjustPan"
+    android:orientation="vertical">
+
+    <include layout="@layout/search_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="#fff"
+        android:paddingBottom="8dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="搜索历史"
+            android:typeface="monospace"
+            android:textColor="#000"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/searchHistorySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展开"
+            android:tag="ON"
+            android:textSize="12dp"
+            android:textColor="#ccc"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchList"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="35dp"
+        android:background="#fff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/dustbin"/>
+        <TextView
+            android:id="@+id/deleteSearchHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空搜索历史"
+            android:textColor="#bbb"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

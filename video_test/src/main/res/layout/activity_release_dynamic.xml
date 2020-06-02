@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llt_root"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/release_dynamic_title"/>
+
+    <EditText
+        android:id="@+id/dynamicConnent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:layout_marginBottom="20dp"
+        android:hint="分享我的哔哩哔哩动态"
+        android:textColorHint="#ccc"
+        android:textSize="16dp"
+        android:textColor="#222"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:maxLength="233"/>
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:windowSoftInputMode="adjustPan"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/add"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/textExtraNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="233"
+        android:layout_margin="10dp"/>
+
+
+
+</LinearLayout>
